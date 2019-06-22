@@ -12,7 +12,7 @@ It is based on the Zomato app that is available on the App Store. It provides a 
 Screenshot
 ======
 
-![](./images/1.png){:width="100px"}
+![](./images/1.png)
 ![](./images/2.png)
 ![](./images/3.png)
 ![](./images/4.png)

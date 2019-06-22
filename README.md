@@ -13,7 +13,7 @@ Description
 What the app _can_ do:
 * Signup for account which will fetch all your saved restaurants
 * Search restaurants around your current location/custom locations include tap onscree or search by name.
-* Show the 1st 20 or 40 results
+* Show the first 20 or 40 results
 * Show selected restaurant's details
 * Able to add to your personal favourite list
 * With favourite restaurants, you can capture images and save to the cloud storage which can retrieve from any devices
@@ -21,10 +21,11 @@ What the app _can_ do:
 What the app _can't_ do:
 * Have the same capability as the OEM app
 * Retrieve details which is only available for commercial apps
-* Can't exceed 1000 API calls/day/user
+* Can't exceed 1000 calls/day/API
 
 What I _will_ do in the future:
 * Contact Zomato to commercialise the app
+* Keep the app up-do-date as much as possible - if it wasn't sold on the Apps Store.
 
 What you _could_ do:
 * Fork it, play with it, make it better, etc. But, please don't forget to give me a shout-out or a small place in your heart ;).

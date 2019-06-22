@@ -189,7 +189,7 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate, MKMapVi
                     let addFavDict: [String:Any] = ["email":email, "id": self.id!, "email_id": email_id, "aggregate_rating": self.restaurant.aggregate_rating, "cuisine": self.restaurant.cuisine, "rating_color": "#"+self.restaurant.rating_color, "name": self.restaurant.name, "add": self.restaurant.address]
                     Database.database().reference().child("addFav").childByAutoId().setValue(addFavDict)
                 } else {
-                    // Redundance because cant add back to fav if from fav list view. Need to fix in the future.
+                    // FIXME: Redundance because cant add back to fav if from fav list view. Need to fix in the future.
                     let email_id = email + "_" + String(self.id!)
                     let addFavDict: [String:Any] = ["email":email, "id": self.id!, "email_id": email_id, "aggregate_rating": self.favRestaurant.aggregate_rating, "cuisine": self.favRestaurant.cuisine, "rating_color": "#"+self.favRestaurant.rating_color, "name": self.favRestaurant.name, "add":self.restaurant.address]
                     Database.database().reference().child("addFav").childByAutoId().setValue(addFavDict)

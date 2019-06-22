@@ -56,7 +56,7 @@ class SearchTableViewController: UITableViewController, CLLocationManagerDelegat
         // Number of fetch result, n = 2
         var start = 0
         // Start fetching process
-        let zomatoKey = "0a102def7d2b492f4699a4f8dd6a651a"
+        let zomatoKey = ""
         let lat = self.pin.coordinate.latitude, long = self.pin.coordinate.longitude
         // Debug
         // print(lat, long)
@@ -65,6 +65,7 @@ class SearchTableViewController: UITableViewController, CLLocationManagerDelegat
         // let urlString = "https://developers.zomato.com/api/v2.1/geocode?lat=\(lat)&lon=\(long)"
         
         // Fetch 2 times
+        // NOTE: sometimes, 2nd fetch is added before adding 1st fetch, resulting in list isn't in distance ascensding order.
         for _ in 0 ... 1 {
             let urlString = "https://developers.zomato.com/api/v2.1/search?count=100&lat=\(lat)&lon=\(long)&sort=real_distance&start=\(start)"
             

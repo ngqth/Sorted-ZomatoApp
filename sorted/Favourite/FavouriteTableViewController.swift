@@ -149,7 +149,7 @@ class FavouriteTableViewController: UITableViewController, DetailViewDelegate {
     // Function to get restaurant data from Api
     // Changes JSON structure to use RestaurantFav
     func restDataApiHitting(_ id: Int, _ completion: @escaping (RestaurantFav) -> ()) {
-        let zomatoKey = ""
+        let zomatoKey = "0a102def7d2b492f4699a4f8dd6a651a"
         //let lat = -37.799641, long = 144.899765
         let urlString = "https://developers.zomato.com/api/v2.1/restaurant?res_id=\(id)"
         //let urlString = "https://developers.zomato.com/api/v2.1/search?count=100&lat=\(lat)&lon=\(long)&sort=real_distance"

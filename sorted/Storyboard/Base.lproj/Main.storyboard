@@ -36,7 +36,7 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="placeholderActiveScale">
                                         <real key="value" value="0.69999999999999996"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Username:"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Username"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="dividerNormalHeight">
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>

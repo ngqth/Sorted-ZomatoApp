@@ -9,6 +9,10 @@ It is based on the Zomato app that is available on the App Store. It provides a 
 
 #### Notes: What you need to do is add your own 'GoogleServiceInfo.plist' file, and 'API key' (which you can obtain free from Zomato developer website) to make the app functioning.
 
+API key should be added in the file below:
+* SearchTableViewController.swift - line 59
+* FavouriteTableViewController.swift - line 152
+
 Screenshot
 ======
 

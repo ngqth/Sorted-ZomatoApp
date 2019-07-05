@@ -247,7 +247,7 @@ open class Switch: UIControl, Themeable {
         break
       }
       
-      invalidateIntrinsicContentSize()
+      frame.size = intrinsicContentSize
     }
   }
   
@@ -414,11 +414,12 @@ fileprivate extension Switch {
     
     if animated {
       animateToState(state: state) { [weak self, isTriggeredByUserInteraction = isTriggeredByUserInteraction] _ in
-        guard isTriggeredByUserInteraction else {
+        guard let s = self else {
           return
         }
         
-        guard let s = self else {
+        guard isTriggeredByUserInteraction else {
+          completion?(s)
           return
         }
         
@@ -431,6 +432,7 @@ fileprivate extension Switch {
       styleForState(state: state)
       
       guard isTriggeredByUserInteraction else {
+        completion?(self)
         return
       }
       

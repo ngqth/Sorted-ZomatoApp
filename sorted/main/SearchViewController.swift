@@ -170,6 +170,8 @@ extension UISearchBar {
                 
             case .prominent, .default:
                 textField.backgroundColor = color
+            @unknown default:
+                fatalError()
             }
         }
     }

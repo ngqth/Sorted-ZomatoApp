@@ -132,6 +132,7 @@ public protocol NavigationDrawerControllerDelegate {
 }
 
 @objc(NavigationDrawerController)
+@objcMembers
 open class NavigationDrawerController: TransitionController {
   /// A boolean indicating if the panel is animating.
   fileprivate var isAnimating = false
@@ -382,7 +383,6 @@ open class NavigationDrawerController: TransitionController {
    */
   public required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
-    prepare()
   }
   
   /**
@@ -392,7 +392,6 @@ open class NavigationDrawerController: TransitionController {
    */
   public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
     super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-    prepare()
   }
   
   /**
@@ -405,7 +404,6 @@ open class NavigationDrawerController: TransitionController {
     super.init(rootViewController: rootViewController)
     self.leftViewController = leftViewController
     self.rightViewController = rightViewController
-    prepare()
   }
   
   open override func transition(to viewController: UIViewController, completion: ((Bool) -> Void)? = nil) {

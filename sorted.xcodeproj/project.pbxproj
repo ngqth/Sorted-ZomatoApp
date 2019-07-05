@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2600EDA322CEFD2E00570D13 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2600EDA222CEFD2E00570D13 /* GoogleService-Info.plist */; };
 		262EDFB72279B6B2001ADE03 /* RestaurantData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262EDFB62279B6B2001ADE03 /* RestaurantData.swift */; };
 		262EDFBB2279C50E001ADE03 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262EDFBA2279C50E001ADE03 /* SearchTableViewController.swift */; };
 		262EDFBF227A1243001ADE03 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262EDFBE227A1243001ADE03 /* DetailViewController.swift */; };
@@ -23,13 +24,13 @@
 		26AD484922743174003E9FCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AD484822743174003E9FCE /* ViewController.swift */; };
 		26AD484C22743174003E9FCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26AD484A22743174003E9FCE /* Main.storyboard */; };
 		26AD485122743176003E9FCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26AD484F22743176003E9FCE /* LaunchScreen.storyboard */; };
-		26AD485922743BFA003E9FCE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 26AD485822743BFA003E9FCE /* GoogleService-Info.plist */; };
 		26DA3FD52275DA00006F099D /* FavouriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DA3FD42275DA00006F099D /* FavouriteTableViewController.swift */; };
 		26FF134C229014A400F70563 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FF134B229014A400F70563 /* Post.swift */; };
 		7E14E1117DCDD11DBC4578AC /* Pods_Sorted.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25E5A1F21647BCD76B2BA92 /* Pods_Sorted.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2600EDA222CEFD2E00570D13 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Dropbox/,Uni/2019/S1/3178/Sorted(Backup)/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		262EDFB62279B6B2001ADE03 /* RestaurantData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantData.swift; sourceTree = "<group>"; };
 		262EDFBA2279C50E001ADE03 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		262EDFBE227A1243001ADE03 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +49,6 @@
 		26AD484B22743174003E9FCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26AD485022743176003E9FCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26AD485222743176003E9FCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		26AD485822743BFA003E9FCE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		26DA3FD42275DA00006F099D /* FavouriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTableViewController.swift; sourceTree = "<group>"; };
 		26FF134B229014A400F70563 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Post.swift; path = sorted/Restaurant/Post.swift; sourceTree = SOURCE_ROOT; };
 		6D99DC6BDA6343AECF94D223 /* Pods-Sorted.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sorted.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sorted/Pods-Sorted.release.xcconfig"; sourceTree = "<group>"; };
@@ -155,7 +155,7 @@
 				26368A522277F31A00CE220E /* Main */,
 				262EDFBD227A00A4001ADE03 /* Search */,
 				26AD485222743176003E9FCE /* Info.plist */,
-				26AD485822743BFA003E9FCE /* GoogleService-Info.plist */,
+				2600EDA222CEFD2E00570D13 /* GoogleService-Info.plist */,
 			);
 			path = Sorted;
 			sourceTree = "<group>";
@@ -212,6 +212,7 @@
 				TargetAttributes = {
 					26AD484222743174003E9FCE = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -239,7 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26AD485122743176003E9FCE /* LaunchScreen.storyboard in Resources */,
-				26AD485922743BFA003E9FCE /* GoogleService-Info.plist in Resources */,
+				2600EDA322CEFD2E00570D13 /* GoogleService-Info.plist in Resources */,
 				2646E60B22B271D6002BF1F1 /* Assets.xcassets in Resources */,
 				26AD484C22743174003E9FCE /* Main.storyboard in Resources */,
 			);
@@ -462,7 +463,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = NQT.Sorted;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -483,7 +484,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = NQT.Sorted;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

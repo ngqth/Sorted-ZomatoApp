@@ -13,8 +13,8 @@ target 'Sorted' do
   pod 'Firebase/Database'
   pod 'Firebase/Analytics'
   pod 'Firebase/Storage'
-  pod 'SwiftyJSON', '~> 4.2.0'
-  pod 'Kingfisher', '~> 4.2'
-  pod 'Material', '~> 3.1.0'
+  pod 'SwiftyJSON'
+  pod 'Kingfisher'
+  pod 'Material'
 
 end

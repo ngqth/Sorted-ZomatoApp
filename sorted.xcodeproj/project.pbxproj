@@ -17,6 +17,8 @@
 		264048E1228E296B00C36FB9 /* GalleryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264048E0228E296B00C36FB9 /* GalleryTableViewController.swift */; };
 		264048E3228E472F00C36FB9 /* GalleryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264048E2228E472F00C36FB9 /* GalleryTableViewCell.swift */; };
 		264048E5228E506B00C36FB9 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264048E4228E506B00C36FB9 /* ComposeViewController.swift */; };
+		2644B41522D4071C006CE610 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2644B41422D4071C006CE610 /* UIColor.swift */; };
+		2644B41922D40942006CE610 /* UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2644B41822D40942006CE610 /* UISearchBar.swift */; };
 		2646E60B22B271D6002BF1F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2646E60A22B271D6002BF1F1 /* Assets.xcassets */; };
 		264E5335228F123E00848ED0 /* CreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264E5334228F123E00848ED0 /* CreditViewController.swift */; };
 		26872A8A2275AE6800B7C0C0 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26872A892275AE6800B7C0C0 /* SearchViewController.swift */; };
@@ -40,6 +42,8 @@
 		264048E0228E296B00C36FB9 /* GalleryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GalleryTableViewController.swift; path = sorted/Gallery/GalleryTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		264048E2228E472F00C36FB9 /* GalleryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GalleryTableViewCell.swift; path = sorted/Gallery/GalleryTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		264048E4228E506B00C36FB9 /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ComposeViewController.swift; path = sorted/Gallery/ComposeViewController.swift; sourceTree = SOURCE_ROOT; };
+		2644B41422D4071C006CE610 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIColor.swift; path = sorted/Helper/UIColor.swift; sourceTree = SOURCE_ROOT; };
+		2644B41822D40942006CE610 /* UISearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UISearchBar.swift; path = sorted/Helper/UISearchBar.swift; sourceTree = SOURCE_ROOT; };
 		2646E60A22B271D6002BF1F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Sorted/Assets.xcassets; sourceTree = "<group>"; };
 		264E5334228F123E00848ED0 /* CreditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CreditViewController.swift; path = sorted/main/CreditViewController.swift; sourceTree = SOURCE_ROOT; };
 		26872A892275AE6800B7C0C0 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +130,15 @@
 			path = Gallery;
 			sourceTree = "<group>";
 		};
+		2644B41322D4070A006CE610 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				2644B41422D4071C006CE610 /* UIColor.swift */,
+				2644B41822D40942006CE610 /* UISearchBar.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		26AD483A22743174003E9FCE = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +161,7 @@
 		26AD484522743174003E9FCE /* Sorted */ = {
 			isa = PBXGroup;
 			children = (
+				2644B41322D4070A006CE610 /* Helper */,
 				264048DF228E294500C36FB9 /* Gallery */,
 				262EDFB52279B69E001ADE03 /* Restaurant */,
 				26368A512277F30600CE220E /* Favourite */,
@@ -296,7 +310,9 @@
 				262EDFBB2279C50E001ADE03 /* SearchTableViewController.swift in Sources */,
 				26DA3FD52275DA00006F099D /* FavouriteTableViewController.swift in Sources */,
 				26AD484922743174003E9FCE /* ViewController.swift in Sources */,
+				2644B41522D4071C006CE610 /* UIColor.swift in Sources */,
 				264048E5228E506B00C36FB9 /* ComposeViewController.swift in Sources */,
+				2644B41922D40942006CE610 /* UISearchBar.swift in Sources */,
 				263FAC472286316500E217E7 /* RestaurantFav.swift in Sources */,
 				264E5335228F123E00848ED0 /* CreditViewController.swift in Sources */,
 				26368A502277E28700CE220E /* SearchTableViewCell.swift in Sources */,
@@ -455,6 +471,25 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuth\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseDatabase\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstanceID\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseStorage\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Material\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Motion\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/leveldb-library\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleAppMeasurement/Frameworks\"",
+					"./**",
+				);
 				INFOPLIST_FILE = Sorted/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -476,6 +511,25 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuth\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseDatabase\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstanceID\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseStorage\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Material\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Motion\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/leveldb-library\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleAppMeasurement/Frameworks\"",
+					"./**",
+				);
 				INFOPLIST_FILE = Sorted/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

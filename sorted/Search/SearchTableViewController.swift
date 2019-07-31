@@ -66,7 +66,7 @@ class SearchTableViewController: UITableViewController, CLLocationManagerDelegat
         
         // Fetch 2 times
         // NOTE: sometimes, 2nd fetch is added before adding 1st fetch, resulting in list isn't in distance ascensding order.
-        for _ in 0 ... 1 {
+        for _ in 0 ... 0 {
             let urlString = "https://developers.zomato.com/api/v2.1/search?count=100&lat=\(lat)&lon=\(long)&sort=real_distance&start=\(start)"
             
             let url = NSURL(string: urlString)
@@ -120,36 +120,5 @@ class SearchTableViewController: UITableViewController, CLLocationManagerDelegat
             controller.inFavourite = false
             controller.id = Int(self.selectRestaurant!.id)
         }
-    }
-}
-
-// Function convert from hex color to UIColor
-// Code is reference in credit
-extension UIColor {
-    convenience init(hexString: String, alpha: CGFloat = 1.0) {
-        let hexString: String = hexString.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
-        let scanner = Scanner(string: hexString)
-        if (hexString.hasPrefix("#")) {
-            scanner.scanLocation = 1
-        }
-        var color: UInt32 = 0
-        scanner.scanHexInt32(&color)
-        let mask = 0x000000FF
-        let r = Int(color >> 16) & mask
-        let g = Int(color >> 8) & mask
-        let b = Int(color) & mask
-        let red   = CGFloat(r) / 255.0
-        let green = CGFloat(g) / 255.0
-        let blue  = CGFloat(b) / 255.0
-        self.init(red:red, green:green, blue:blue, alpha:alpha)
-    }
-    func toHexString() -> String {
-        var r:CGFloat = 0
-        var g:CGFloat = 0
-        var b:CGFloat = 0
-        var a:CGFloat = 0
-        getRed(&r, green: &g, blue: &b, alpha: &a)
-        let rgb:Int = (Int)(r*255)<<16 | (Int)(g*255)<<8 | (Int)(b*255)<<0
-        return String(format:"#%06x", rgb)
     }
 }

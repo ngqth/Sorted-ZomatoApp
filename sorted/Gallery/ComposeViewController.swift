@@ -116,6 +116,7 @@ class ComposeViewController: UIViewController {
     }
 }
 
+
 // ImagePicker view
 // Code has reference in credit
 extension ComposeViewController : UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -134,4 +135,3 @@ extension ComposeViewController : UIImagePickerControllerDelegate, UINavigationC
         self.dismiss(animated: true, completion: nil)
     }
 }
-    
